@@ -36,16 +36,19 @@ body {
   margin: 0 auto;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  flex-shrink: 1;
 }
 .header-list {
   display: flex;
   gap: 50px;
   padding-left: 100px;
+  flex-shrink: 1;
 }
 .header-list-right {
   display: flex;
   gap: 40px;
   margin-left: 300px;
+  flex-shrink: 1;
 }
 .link {
   font-weight: var(--font-weight);
@@ -132,14 +135,16 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
   background-color: #2f303a;
   height: 600px;
-  margin: 0 auto;
+  margin: auto 0px;
 }
 h1 {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 0;
   font-family: inherit;
   font-weight: 900;
   font-size: 44px;
@@ -148,6 +153,7 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
+  flex-shrink: 1;
 }
 
 .button-index-page {
@@ -160,7 +166,7 @@ h1 {
 .button-index-page > p {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
@@ -179,7 +185,7 @@ h1 {
   display: flex;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
@@ -188,7 +194,7 @@ h1 {
   display: flex;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--contacts-and-links-color);
 }
@@ -227,6 +233,7 @@ h1 {
 .main-staff {
   display: flex;
   gap: 30px;
+  flex-shrink: 1;
 }
 .main-staff-card {
   display: flex;
@@ -239,7 +246,7 @@ h1 {
 .main-staff-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -247,7 +254,7 @@ h1 {
 .main-staff-occupation {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--contacts-and-links-color);
@@ -285,6 +292,7 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  flex-wrap: wrap;
   gap: 30px;
   width: 1200px;
 }
@@ -293,6 +301,7 @@ h1 {
   display: flex;
   flex-direction: column;
   border: 1px solid #eeeeee;
+  flex-basis: 30%;
 }
 
 .projects-name {
