@@ -48,7 +48,7 @@ body {
   margin-left: 300px;
 }
 .contact-header-svg {
-  display: inline-block;
+  display: inline;
   margin: 14px 0 0 20px;
   width: 16px;
   height: 14px;
@@ -128,14 +128,13 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 /* Index */
-
 .main-banner {
+  background-image: url("images/banner-img.jpg");
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
-  background-color: #2f303a;
   height: 600px;
   margin: 0 auto;
 }
@@ -166,6 +165,12 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+.main-strengths-svg-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 .main-core-strengths {
   display: flex;
@@ -222,6 +227,12 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+.icons-staff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .main-staff {
   display: flex;
