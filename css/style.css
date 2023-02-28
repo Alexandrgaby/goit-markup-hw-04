@@ -12,7 +12,7 @@ body {
   font-family: "Roboto", "raleway", sans-serif;
   color: var(--main-text-color);
   font-style: normal;
-  margin: 0;
+  margin: 0 auto;
 }
 .container {
   margin: 0 auto;
@@ -36,19 +36,22 @@ body {
   margin: 0 auto;
   align-items: center;
   border-bottom: 1px solid #ececec;
-  flex-shrink: 1;
 }
 .header-list {
   display: flex;
   gap: 50px;
   padding-left: 100px;
-  flex-shrink: 1;
 }
 .header-list-right {
   display: flex;
   gap: 40px;
   margin-left: 300px;
-  flex-shrink: 1;
+}
+.contact-header-svg {
+  display: inline-block;
+  margin: 14px 0 0 20px;
+  width: 16px;
+  height: 14px;
 }
 .link {
   font-weight: var(--font-weight);
@@ -108,7 +111,8 @@ body {
   color: var(--hover-color);
 }
 
-.adress-footer {
+.adress-footer,
+.contact-footer {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -121,12 +125,7 @@ body {
   color: var(--hover-color);
 }
 .contact-footer {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 /* Index */
 
@@ -135,25 +134,22 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
   align-items: center;
   background-color: #2f303a;
   height: 600px;
-  margin: auto 0px;
+  margin: 0 auto;
 }
 h1 {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 0;
   font-family: inherit;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-color);
-  flex-shrink: 1;
 }
 
 .button-index-page {
@@ -166,26 +162,23 @@ h1 {
 .button-index-page > p {
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-}
-.section-main-core-strengths {
-  display: flex;
-  margin: 0 auto;
-  width: 1200px;
 }
 .main-core-strengths {
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin: 0 auto;
+  width: 1200px;
 }
 .main-strengths-title {
   display: flex;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
@@ -194,7 +187,7 @@ h1 {
   display: flex;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contacts-and-links-color);
 }
@@ -208,10 +201,10 @@ h1 {
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
-  text-align: center;
-  line-height: 42px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-bottom: 45px;
@@ -225,7 +218,7 @@ h1 {
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -233,7 +226,6 @@ h1 {
 .main-staff {
   display: flex;
   gap: 30px;
-  flex-shrink: 1;
 }
 .main-staff-card {
   display: flex;
@@ -246,7 +238,7 @@ h1 {
 .main-staff-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -254,7 +246,7 @@ h1 {
 .main-staff-occupation {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--contacts-and-links-color);
@@ -269,7 +261,6 @@ h1 {
 }
 .buttons {
   background-color: #f5f4fa;
-  width: 100%;
   border-radius: 4px;
   cursor: pointer;
   border-style: unset;
@@ -301,7 +292,6 @@ h1 {
   display: flex;
   flex-direction: column;
   border: 1px solid #eeeeee;
-  flex-basis: 30%;
 }
 
 .projects-name {
@@ -324,5 +314,8 @@ h1 {
   padding: 94px;
   margin: 0 auto;
   background-color: var(--background-footer-color);
-  margin-bottom: 0;
+}
+/* Icons-svg */
+#iconmail1 {
+  stroke: #757575;
 }
