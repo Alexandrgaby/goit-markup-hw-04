@@ -17,7 +17,7 @@
     <title>Portofolio</title>
   </head>
   <body>
-    <div class="container">
+    <div>
       <header class="page-header">
         <a class="logo" href="index.html"
           ><span class="logo-first-word">Web</span>Studio</a
@@ -35,33 +35,21 @@
             </li>
           </ul>
         </nav>
-
         <ul class="list-content header-list-right">
           <li>
-            <svg class="contact-header-svg">
-              <use
-                href="./images/icons-svg.svg#iconmail1"
-                width="16px"
-                height="12px"
-              ></use>
-            </svg>
-          </li>
-          <li>
             <a class="contact-header" href="mailto:info@devstudio.com">
+              <svg class="contact-header-svg">
+                <use href="./images/icons-svg.svg#iconmail1"></use>
+              </svg>
               <p>info@devstudio.com</p>
             </a>
           </li>
           <li>
-            <svg class="contact-header-svg">
-              <use
-                href="./images/icons-svg.svg#icon-phone-1"
-                width="16px"
-                height="12px"
-              ></use>
-            </svg>
-          </li>
-          <li>
             <a class="contact-header" href="tel:+1212-772-4150">
+              <svg class="contact-header-svg">
+                <use href="./images/icons-svg.svg#icon-phone-1"></use>
+              </svg>
+
               <p>+1 212-772-4150</p>
             </a>
           </li>
@@ -209,31 +197,88 @@
         </section>
       </main>
       <footer class="footer-page">
-        <div class="footer-adress-contacts-container">
-          <a class="logo-footer" href="index.html"
-            ><span class="logo-footer-first-word">Web</span>Studio</a
-          >
-          <address>
-            <ul class="list-content footer-content">
-              <li>
-                <a
-                  class="adress-footer"
-                  href="https://goo.gl/maps/83Axbr2DgfrndoFE7"
-                  ><p>Ave, NY 10065, USA</p></a
-                >
-              </li>
-              <li>
-                <a class="contact-footer" href="mailto:info@devstudio.com"
-                  ><p>info@devstudio.com</p></a
-                >
-              </li>
-              <li>
-                <a class="contact-footer" href="tel:+1212-772-4150"
-                  ><p>+1 212-772-4150</p></a
-                >
-              </li>
-            </ul>
-          </address>
+        <div class="container footer-container">
+          <div class="footer-adress-contacts-container">
+            <div>
+              <a class="logo-footer" href="index.html"
+                ><span class="logo-footer-first-word">Web</span>Studio</a
+              >
+            </div>
+            <address>
+              <ul class="list-content address-container">
+                <li>
+                  <a
+                    class="adress-footer"
+                    href="https://goo.gl/maps/83Axbr2DgfrndoFE7"
+                    ><p>Ave, NY 10065, USA</p></a
+                  >
+                </li>
+                <li>
+                  <a class="contact-footer" href="mailto:info@devstudio.com"
+                    ><p>info@devstudio.com</p></a
+                  >
+                </li>
+                <li>
+                  <a class="contact-footer" href="tel:+1212-772-4150"
+                    ><p>+1 212-772-4150</p></a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="socials-footer-container">
+              <h3 id="titleFooter">Find Us On</h3>
+              <ul class="list-content">
+                <li>
+                  <a class="socials-icons-footer" href="#"
+                    ><svg width="44px" height="44px">
+                      <use
+                        href="./images/icons-svg.svg#icon-instagram-2 "
+                        width="20px"
+                        height="20px"
+                        x="9"
+                        y="9"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a class="socials-icons-footer" href="#"
+                    ><svg width="44px" height="44px">
+                      <use
+                        href="./images/icons-svg.svg#icon-twitter "
+                        width="20px"
+                        height="20px"
+                        x="9"
+                        y="9"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a class="socials-icons-footer" href="#"
+                    ><svg width="44px" height="44px">
+                      <use
+                        href="./images/icons-svg.svg#icon-facebook-1 "
+                        width="20px"
+                        height="20px"
+                        x="9"
+                        y="9"
+                      ></use></svg
+                  ></a>
+                </li>
+                <li>
+                  <a class="socials-icons-footer" href="#"
+                    ><svg width="44px" height="44px">
+                      <use
+                        href="./images/icons-svg.svg#icon-linkedin-1 "
+                        width="20px"
+                        height="20px"
+                        x="9"
+                        y="9"
+                      ></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
