@@ -89,13 +89,12 @@ body {
 .list-content {
   list-style: none;
 }
-.footer-adress-contacts-container {
+.footer-main-container {
   display: flex;
   gap: 94px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .logo-footer {
   font-family: "Raleway";
   width: 145px;
@@ -113,6 +112,12 @@ body {
 .footer-container {
   display: flex;
   gap: 30px;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 .logo-footer-first-word,
 .logo-first-word {
