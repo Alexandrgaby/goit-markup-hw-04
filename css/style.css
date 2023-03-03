@@ -30,7 +30,7 @@ body {
   letter-spacing: 0.03em;
   color: #000;
   text-decoration: none;
-  padding-right: 200px;
+  /* padding-right: 140px; */
 }
 .page-header {
   display: flex;
@@ -40,13 +40,17 @@ body {
 }
 .header-list {
   display: flex;
+  flex-grow: 1;
   gap: 50px;
-  padding-right: 200px;
+  padding-right: 340px;
 }
 .header-list-right,
 .contact-header-svg {
   display: flex;
-  margin: 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 50px;
 }
 .contact-header-svg {
   width: 16px;
@@ -141,6 +145,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 0 0 0 34px;
 }
 .socials-footer-container {
   display: flex;
@@ -152,6 +157,8 @@ body {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
 }
 .socials-icons-footer use {
   fill: #fff;
