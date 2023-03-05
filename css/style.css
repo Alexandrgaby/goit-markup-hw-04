@@ -32,7 +32,7 @@ body {
   text-decoration: none;
   /* padding-right: 140px; */
 }
-.page-header {
+.hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,6 +176,15 @@ body {
   background-color: var(--hover-color);
 }
 /* svgs */
+#iconmail1 {
+  stroke: #757575;
+}
+.features-svg-window > svg > use {
+  transform: translate(99px, 25px);
+}
+.regular-customers-window > svg > use {
+  transform: scale(0.53, 0.53) translate(68px, 40px);
+}
 /* Index */
 .main-banner {
   display: flex;
@@ -202,7 +211,6 @@ h1 {
   color: var(--background-color);
   width: 700px;
 }
-
 .button-index-page {
   width: 200px;
   background: #2196f3;
@@ -218,28 +226,24 @@ h1 {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-.main-strengths-container {
+.main-features-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-
-.strengths-svg-window {
+.features-svg-window {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
 }
-.strengths-svg-window > svg > use {
-  transform: translate(99px, 25px);
-}
-.main-core-strengths {
+.main-features {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 0 auto;
 }
-.main-strengths-title {
+.main-features-title {
   display: flex;
   font-weight: 700;
   font-size: 14px;
@@ -248,7 +252,7 @@ h1 {
   text-transform: uppercase;
   color: var(--main-text-color);
 }
-.main-strengths-text {
+.main-features-text {
   display: flex;
   font-weight: 400;
   font-size: 14px;
@@ -361,9 +365,6 @@ h1 {
   align-items: center;
   fill: #afb1b8;
 }
-.regular-customers-window > svg > use {
-  transform: scale(0.53, 0.53) translate(68px, 40px);
-}
 .regular-customers-window:hover,
 .regular-customers-window:focus {
   fill: var(--hover-color);
@@ -405,7 +406,6 @@ h1 {
   gap: 30px;
   width: 1200px;
 }
-
 .projects {
   display: flex;
   flex-direction: column;
@@ -416,14 +416,12 @@ h1 {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .projects-name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   margin-left: 24px;
 }
-
 .projects-category {
   font-size: 16px;
   line-height: 1.87;
@@ -437,8 +435,4 @@ h1 {
   padding: 94px;
   margin: 0 auto;
   background-color: var(--background-footer-color);
-}
-/* Icons-svg */
-#iconmail1 {
-  stroke: #757575;
 }
